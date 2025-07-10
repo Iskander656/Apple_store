@@ -1,0 +1,8 @@
+.background-image{
+    background-image: url(../img/1\ \(12\).jpeg);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
