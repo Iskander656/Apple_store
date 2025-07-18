@@ -2,13 +2,12 @@
 
 namespace Database\Seeders;
 
-use ProductSeeder;
+
 use Illuminate\Database\Seeder;
 use Database\Seeders\ColorSeeder;
 use Database\Seeders\OrderSeeder;
 use Database\Seeders\CategorySeeder;
 use Database\Seeders\LocationSeeder;
-
 
 class DatabaseSeeder extends Seeder
 {
