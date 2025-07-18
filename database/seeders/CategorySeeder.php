@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Color;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class ColorSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,21 +14,19 @@ class ColorSeeder extends Seeder
     public function run(): void
     {
         $objs = [
-            'gray',
-            'Black',
-            'Black Titanium',
-            'Midnight',
-            'Gold',
-            'Sky-Blue',
-            'White',
-            'Silver',
-            'Red',  
+            'iPhone',
+            'Macbook',
+            'iPad',
+            'AirPods',
+            'Watch',
+            'Accessories',
         ];
 
         foreach($objs as $obj){
-            Color::create([
+            Category::create([
                 'name' => $obj,
             ]);
+
         }
     }
 }

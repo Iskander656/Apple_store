@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Location;
+use App\Models\Order;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class LocationSeeder extends Seeder
+class OrderSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,18 +14,16 @@ class LocationSeeder extends Seeder
     public function run(): void
     {
         $objs = [
-            'Ashgabat',
-            'Arkadag',
-            'Ahal',
-            'Mary',
-            'Dashoguz',
-            'Balkan',
-            'Lebap',
+            'Delivered',
+            'Cancelled',
+            'Delayed',
+            'Pending',
         ];
 
         foreach($objs as $obj){
-            Location::create([
-                'name' => $obj,
+            Order::create([
+                'customer_name' => 'Customer ' . rand(1, 100),
+                'status' => $obj,
             ]);
         }
     }
