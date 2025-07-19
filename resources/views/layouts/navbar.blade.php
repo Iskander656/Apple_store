@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container-xl">
-        <a class="navbar-brand fw-bold text-dark" href="#">
+        <a class="navbar-brand fw-bold text-dark" href="{{ route('home') }}">
             <i class="bi bi-apple"></i> Apple Store
         </a>
 
@@ -12,10 +12,11 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                    <a class="nav-link{{ request()->is('/') ? ' active' : '' }}" href="#">Home</a>
+                    <a class="nav-link{{ request()->is('/') ? ' active' : '' }}" href="{{ route('home') }}">Home</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Apple Store</a>
+                    <a class="nav-link "href="{{ route('status.status.form') }}">Order Status</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -24,18 +25,15 @@
                         Categories
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">iPhones</a></li>
-                        <li><a class="dropdown-item" href="#">MacBooks</a></li>
-                        <li><a class="dropdown-item" href="#">iPads</a></li>
-                        <li><a class="dropdown-item" href="#">Apple Watch</a></li>
-                        <li><a class="dropdown-item" href="#">AirPods</a></li>
+                        @foreach ($categories as $category)
+                            <li><a class="dropdown-item" href="{{ route('category.show', $category->id) }}">{{ $category->name }}</a></li>
+                        @endforeach
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-dark ms-lg-3" href="#">Login</a>
+                    <a class="nav-link btn btn-outline-dark ms-lg-3" href="{{ route('login') }}">Login</a>
                 </li>
-
                 <li class="nav-item ms-2">
                     <a class="nav-link position-relative" href="#">
                         <i class="bi bi-cart-fill fs-5"></i>

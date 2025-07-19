@@ -2,20 +2,21 @@
 
 namespace App\Models;
 
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    public function category()
+    public $timestamps = false;
+    protected $guarded = [
+        'id',
+    ];
+    protected $fillable = [
+        'name',
+    ];
+
+    public function products()
     {
-        return $this->belongsTo(Category::class);
-    }
-    public function color()
-    {
-        return $this->belongsTo(Color::class);
-    }
-    public function location()
-    {
-        return $this->belongsTo(Location::class);
+        return $this->hasMany(Product::class);
     }
 }

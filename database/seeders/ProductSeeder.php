@@ -144,7 +144,7 @@ class ProductSeeder extends Seeder
                 'price' => 29.00,
                 'stock' => 100,
                 'category' => 'Accessories',
-                'image' =>'img/Mac Studio.png',
+                'image' => 'img/AirTag.jpeg'
             ],
             [
                 'name' => 'iPhone 16 Pro',

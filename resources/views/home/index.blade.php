@@ -8,7 +8,7 @@
         <div class="container-xl">
             <div class="text-center mb-5">
                 <i class="bi-apple display-4"></i>
-                <h1 class="display-5">Featured Products</h1>
+                <h1 class="display-5" id="Featured">Featured Products</h1>
             </div>
             <div class="row g-4">
                 @foreach ($products as $product)
@@ -24,6 +24,8 @@
                                 </ul>
                                 <p class="text-muted mb-1"><s>${{ $product->old_price }}</s></p>
                                 <p class="text-danger fw-bold">${{ $product->price }}</p>
+                                <a href="{{ route('order.form', $product->id) }}" class="btn btn-outline-primary">Order</a>
+
                             </div>
                         </div>
                     </div>
