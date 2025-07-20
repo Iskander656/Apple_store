@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 
 class CategorySeeder extends Seeder
 {
@@ -22,11 +22,10 @@ class CategorySeeder extends Seeder
             'Accessories',
         ];
 
-        foreach($objs as $obj){
+        foreach ($objs as $obj) {
             Category::create([
                 'name' => $obj,
             ]);
-
         }
     }
 }

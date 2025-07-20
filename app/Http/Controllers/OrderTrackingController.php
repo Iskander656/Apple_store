@@ -10,7 +10,7 @@ class OrderTrackingController extends Controller
 {
     public function showForm()
     {
-        $categories = Category::all(); 
+        $categories = Category::all();
         return view('status.status-form', compact('categories'));
     }
 
@@ -20,7 +20,7 @@ class OrderTrackingController extends Controller
             'customer_name' => 'required|string|max:255',
         ]);
 
-        $categories = Category::all(); 
+        $categories = Category::all();
 
         $order = Order::with(['product', 'location'])
             ->where('customer_name', $request->customer_name)

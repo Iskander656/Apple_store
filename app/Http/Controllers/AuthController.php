@@ -10,7 +10,7 @@ class AuthController extends Controller
     public function showLogin()
     {
         $categories = Category::all();
-        
+
         return view('auth.login', compact('categories'));
     }
 }

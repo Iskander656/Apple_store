@@ -23,7 +23,9 @@
                 </div>
 
                 <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-dark btn-lg w-100 rounded-pill shadow-sm">Login</button>
+                    <button type="button" onclick="window.location='{{ route('home') }}'"
+                        class="btn btn-outline-dark btn-lg rounded-5">Login</button>
+
                 </div>
             </form>
         </div>

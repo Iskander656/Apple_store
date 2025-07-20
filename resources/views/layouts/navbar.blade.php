@@ -26,16 +26,17 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         @foreach ($categories as $category)
-                            <li><a class="dropdown-item" href="{{ route('category.show', $category->id) }}">{{ $category->name }}</a></li>
+                            <li><a class="dropdown-item"
+                                    href="{{ route('category.show', $category->id) }}">{{ $category->name }}</a></li>
                         @endforeach
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-dark ms-lg-3" href="{{ route('login') }}">Login</a>
+                    <a class="nav-link btn ms-lg-3" href="{{ route('login') }}">Login</a>
                 </li>
                 <li class="nav-item ms-2">
-                    <a class="nav-link position-relative" href="#">
+                    <a class="nav-link position-relative" href="{{ route('category.show', ['id' => 1]) }}">
                         <i class="bi bi-cart-fill fs-5"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             0

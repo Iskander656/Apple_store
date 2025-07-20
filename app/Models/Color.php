@@ -18,5 +18,4 @@ class Color extends Model
     {
         return $this->hasMany(Product::class);
     }
-    
 }

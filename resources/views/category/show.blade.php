@@ -3,6 +3,9 @@
 @section('content')
     <section class="py-5">
         <div class="container">
+            <div class="text-center display-6 pb-2">
+                <i class="bi-apple"></i>
+            </div>
             <h2 class="mb-4 text-center">{{ $category->name }}</h2>
 
             @if ($products->isEmpty())
@@ -20,9 +23,11 @@
                                             <li>{{ $line }}</li>
                                         @endforeach
                                     </ul>
-                                    <div class="mt-auto">
+                                    <div class="mt-auto row">
                                         <p class="text-danger fw-bold fs-5">${{ $product->price }}</p>
-                                        <a href="{{ route('order.form', $product->id) }}" class="btn btn-outline-primary">Order</a>
+                                        <a href="{{ route('order.form', $product->id) }}"
+                                            class="btn btn-outline-primary btn-lg rounded-5"><i
+                                                class="bi-cart text-success"></i>Order</a>
                                     </div>
                                 </div>
                             </div>

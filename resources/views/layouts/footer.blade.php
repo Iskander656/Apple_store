@@ -4,6 +4,6 @@
                 <i class="bi-apple"></i>
             </div>
             <p class="mb-0">&copy; 2025 Apple Store <br>
-                 All rights reserved.</p>
+                All rights reserved.</p>
         </div>
     </footer>

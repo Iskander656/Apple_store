@@ -15,7 +15,10 @@ class Order extends Model
         'customer_name',
         'status',
         'phone',
+        'location_id',
+        'product_id',
     ];
+
 
     public function product()
     {

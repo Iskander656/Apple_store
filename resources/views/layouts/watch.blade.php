@@ -5,8 +5,10 @@
 
             <h2 class="text-center fw-light">Thinstant classic.</h2>
             <div class="text-center pt-4 pb-4">
-                <a href="{{ route('category.show', ['id' => 5]) }}" class="btn btn-outline-primary btn-lg rounded-5">Learn More</a>
-                <a href="{{ route('category.show', ['id' => 5]) }}" class="btn btn-outline-success btn-lg rounded-5">Shop Now</a>
+                <a href="{{ route('category.show', ['id' => 5]) }}"
+                    class="btn btn-outline-primary btn-lg rounded-5">Learn More</a>
+                <a href="{{ route('category.show', ['id' => 5]) }}"
+                    class="btn btn-outline-success btn-lg rounded-5">Shop Now</a>
             </div>
             <div class="text-center" style="background-color: #ffffff;">
                 <img src="img/apple-watch-series-10__esijfewqry82_og.png" alt="#" class="img-fluid rounded">

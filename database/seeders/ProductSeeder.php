@@ -7,7 +7,7 @@ use App\Models\Product;
 use App\Models\Category;
 use App\Models\Location;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 
 class ProductSeeder extends Seeder
 {
@@ -32,7 +32,7 @@ class ProductSeeder extends Seeder
                 'price' => 1999.00,
                 'stock' => 15,
                 'category' => 'MacBook',
-                'image' =>'img/MacBook Pro.jpeg',
+                'image' => 'img/MacBook Pro.jpeg',
             ],
             [
                 'name' => 'iPad Air (5th Gen)',
@@ -40,7 +40,7 @@ class ProductSeeder extends Seeder
                 'price' => 749.00,
                 'stock' => 30,
                 'category' => 'iPad',
-                'image' =>'img/iPad Air.jpg.webp',
+                'image' => 'img/iPad Air.jpg.webp',
             ],
             [
                 'name' => 'Apple Watch Series 9',
@@ -48,7 +48,7 @@ class ProductSeeder extends Seeder
                 'price' => 429.00,
                 'stock' => 40,
                 'category' => 'Watch',
-                'image' =>'img/Apple watch.jpeg',
+                'image' => 'img/Apple watch.jpeg',
             ],
             [
                 'name' => 'AirPods Pro (2nd Gen)',
@@ -56,7 +56,7 @@ class ProductSeeder extends Seeder
                 'price' => 249.00,
                 'stock' => 60,
                 'category' => 'AirPods',
-                'image' =>'img/Airpods 2nd Gen.jpeg',
+                'image' => 'img/Airpods 2nd Gen.jpeg',
             ],
             [
                 'name' => 'iPhone SE (3rd Gen)',
@@ -64,7 +64,7 @@ class ProductSeeder extends Seeder
                 'price' => 429.00,
                 'stock' => 20,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone SE.jpg',
+                'image' => 'img/iPhone SE.jpg',
             ],
             [
                 'name' => 'MacBook Air 13” M2',
@@ -72,7 +72,7 @@ class ProductSeeder extends Seeder
                 'price' => 1099.00,
                 'stock' => 18,
                 'category' => 'MacBook',
-                'image' =>'img/Mac M2.jpg.webp',
+                'image' => 'img/Mac M2.jpg.webp',
             ],
             [
                 'name' => 'iPad Pro 11” (M4)',
@@ -80,7 +80,7 @@ class ProductSeeder extends Seeder
                 'price' => 999.00,
                 'stock' => 10,
                 'category' => 'iPad',
-                'image' =>'img/ipad-pro-11-in-2nd-generation-space-gray.jpg',
+                'image' => 'img/ipad-pro-11-in-2nd-generation-space-gray.jpg',
             ],
             [
                 'name' => 'Apple Watch Ultra 2',
@@ -88,7 +88,7 @@ class ProductSeeder extends Seeder
                 'price' => 799.00,
                 'stock' => 12,
                 'category' => 'Watch',
-                'image' =>'img/Watch Ultra.jpeg',
+                'image' => 'img/Watch Ultra.jpeg',
             ],
             [
                 'name' => 'Apple Vision Pro',
@@ -96,7 +96,7 @@ class ProductSeeder extends Seeder
                 'price' => 3499.00,
                 'stock' => 5,
                 'category' => 'Accessories',
-                'image' =>'img/Vision.jpg',
+                'image' => 'img/Vision.jpg',
             ],
             [
                 'name' => 'MagSafe Duo Charger',
@@ -104,7 +104,7 @@ class ProductSeeder extends Seeder
                 'price' => 129.00,
                 'stock' => 35,
                 'category' => 'Accessories',
-                'image' =>'img/Magsafe.jpg.webp',
+                'image' => 'img/Magsafe.jpg.webp',
             ],
             [
                 'name' => 'HomePod Mini',
@@ -112,7 +112,7 @@ class ProductSeeder extends Seeder
                 'price' => 99.00,
                 'stock' => 50,
                 'category' => 'Accessories',
-                'image' =>'img/HomePod.jpg',
+                'image' => 'img/HomePod.jpg',
             ],
             [
                 'name' => 'Apple Pencil (2nd Gen)',
@@ -120,7 +120,7 @@ class ProductSeeder extends Seeder
                 'price' => 129.00,
                 'stock' => 45,
                 'category' => 'Accessories',
-                'image' =>'img/Pencil.png',
+                'image' => 'img/Pencil.png',
             ],
             [
                 'name' => 'Magic Keyboard for iPad Pro',
@@ -128,7 +128,7 @@ class ProductSeeder extends Seeder
                 'price' => 299.00,
                 'stock' => 25,
                 'category' => 'Accessories',
-                'image' =>'img/Magic keyboard.jpeg',
+                'image' => 'img/Magic keyboard.jpeg',
             ],
             [
                 'name' => 'Mac Studio (M2 Ultra)',
@@ -136,7 +136,7 @@ class ProductSeeder extends Seeder
                 'price' => 3999.00,
                 'stock' => 7,
                 'category' => 'MacBook',
-                'image' =>'img/Mac Studio.png',
+                'image' => 'img/Mac Studio.png',
             ],
             [
                 'name' => 'AirTag',
@@ -152,7 +152,7 @@ class ProductSeeder extends Seeder
                 'price' => 1599.00,
                 'stock' => 10,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone 16 Pro.webp',
+                'image' => 'img/iPhone 16 Pro.webp',
             ],
             [
                 'name' => 'MacBook Pro 14” M4',
@@ -160,7 +160,7 @@ class ProductSeeder extends Seeder
                 'price' => 2399.00,
                 'stock' => 7,
                 'category' => 'MacBook',
-                'image' =>'img/MacBook Pro.jpeg',
+                'image' => 'img/MacBook Pro.jpeg',
             ],
             [
                 'name' => 'MacBook Air 13” M4',
@@ -168,7 +168,7 @@ class ProductSeeder extends Seeder
                 'price' => 1299.00,
                 'stock' => 15,
                 'category' => 'MacBook',
-                'image' =>'img/Macbook Air.jpg',
+                'image' => 'img/Macbook Air.jpg',
             ],
             [
                 'name' => 'iPhone 16',
@@ -176,7 +176,7 @@ class ProductSeeder extends Seeder
                 'price' => 999.00,
                 'stock' => 12,
                 'category' => 'iPhone',
-                'image' =>'img/Iphone 16 plus(green).jpg',
+                'image' => 'img/Iphone 16 plus(green).jpg',
             ],
             [
                 'name' => 'Apple Vision Pro 2',
@@ -184,7 +184,7 @@ class ProductSeeder extends Seeder
                 'price' => 3199.00,
                 'stock' => 4,
                 'category' => 'Accessories',
-                'image' =>'img/Vision.jpg',
+                'image' => 'img/Vision.jpg',
             ],
             [
                 'name' => 'AirPods 4',
@@ -192,7 +192,7 @@ class ProductSeeder extends Seeder
                 'price' => 199.00,
                 'stock' => 50,
                 'category' => 'AirPods',
-                'image' =>'img/airpods-4.jpeg',
+                'image' => 'img/airpods-4.jpeg',
             ],
             [
                 'name' => 'iPhone 16',
@@ -200,7 +200,7 @@ class ProductSeeder extends Seeder
                 'price' => 999.00,
                 'stock' => 15,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone 16.jpeg',
+                'image' => 'img/iPhone 16.jpeg',
             ],
             [
                 'name' => 'iPhone 16 Blue 256GB',
@@ -208,7 +208,7 @@ class ProductSeeder extends Seeder
                 'price' => 1099.00,
                 'stock' => 10,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone 16.jpeg',
+                'image' => 'img/iPhone 16.jpeg',
             ],
             [
                 'name' => 'iPhone 16 Plus Purple 128GB',
@@ -216,7 +216,7 @@ class ProductSeeder extends Seeder
                 'price' => 1099.00,
                 'stock' => 12,
                 'category' => 'iPhone',
-                'image' =>'img/Iphone 16 (Purple).jpg',
+                'image' => 'img/Iphone 16 (Purple).jpg',
             ],
             [
                 'name' => 'iPhone 16 Plus Black 256GB',
@@ -224,7 +224,7 @@ class ProductSeeder extends Seeder
                 'price' => 1199.00,
                 'stock' => 8,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone 16 Plus.webp',
+                'image' => 'img/iPhone 16 Plus.webp',
             ],
             [
                 'name' => 'iPhone 16 Pro White Titanium 256GB',
@@ -232,7 +232,7 @@ class ProductSeeder extends Seeder
                 'price' => 1299.00,
                 'stock' => 9,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone 16 Pro.webp',
+                'image' => 'img/iPhone 16 Pro.webp',
             ],
             [
                 'name' => 'iPhone 16 Pro White Titanium 512GB',
@@ -240,7 +240,7 @@ class ProductSeeder extends Seeder
                 'price' => 1499.00,
                 'stock' => 5,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone 16 Pro.webp',
+                'image' => 'img/iPhone 16 Pro.webp',
             ],
             [
                 'name' => 'iPhone 16 Pro Max Natural Titanium 256GB',
@@ -248,7 +248,7 @@ class ProductSeeder extends Seeder
                 'price' => 1399.00,
                 'stock' => 6,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone 16 Pro Max.jpeg',
+                'image' => 'img/iPhone 16 Pro Max.jpeg',
             ],
             [
                 'name' => 'iPhone 16 Pro Max Natural Titanium 1TB',
@@ -256,7 +256,7 @@ class ProductSeeder extends Seeder
                 'price' => 1799.00,
                 'stock' => 3,
                 'category' => 'iPhone',
-                'image' =>'img/iPhone 16 Pro Max.jpeg',
+                'image' => 'img/iPhone 16 Pro Max.jpeg',
             ],
             [
                 'name' => 'MacBook Air 13” M4 Midnight 256GB',
@@ -264,7 +264,7 @@ class ProductSeeder extends Seeder
                 'price' => 1299.00,
                 'stock' => 10,
                 'category' => 'MacBook',
-                'image' =>'img/Macbook Air.jpg',
+                'image' => 'img/Macbook Air.jpg',
             ],
             [
                 'name' => 'MacBook Air 13” M4 Midnight 512GB',
@@ -272,7 +272,7 @@ class ProductSeeder extends Seeder
                 'price' => 1499.00,
                 'stock' => 7,
                 'category' => 'MacBook',
-                'image' =>'img/Macbook Air.jpg',
+                'image' => 'img/Macbook Air.jpg',
             ],
             [
                 'name' => 'MacBook Pro 14” M4 Space Black 512GB',
@@ -280,7 +280,7 @@ class ProductSeeder extends Seeder
                 'price' => 1999.00,
                 'stock' => 5,
                 'category' => 'MacBook',
-                'image' =>'img/MacBook Pro.jpeg',
+                'image' => 'img/MacBook Pro.jpeg',
             ],
             [
                 'name' => 'MacBook Pro 14” M4 Space Black 1TB',
@@ -288,7 +288,7 @@ class ProductSeeder extends Seeder
                 'price' => 2499.00,
                 'stock' => 4,
                 'category' => 'MacBook',
-                'image' =>'img/MacBook Pro.jpeg',
+                'image' => 'img/MacBook Pro.jpeg',
             ],
         ];
 

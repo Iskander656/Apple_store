@@ -5,8 +5,10 @@
             <p class="text-center fs-5 text-white">The iPad Pro is designed to be the ultimate tool for creativity and
                 productivity.</p>
             <div class="text-center pb-4">
-                <a href="{{ route('category.show', ['id' => 3]) }}" class="btn btn-outline-primary btn-lg rounded-5">Learn More</a>
-                <a href="{{ route('category.show', ['id' => 3]) }}" class="btn btn-outline-success btn-lg rounded-5">Shop Now</a>
+                <a href="{{ route('category.show', ['id' => 3]) }}" class="btn btn-outline-primary btn-lg rounded-5">Learn
+                    More</a>
+                <a href="{{ route('category.show', ['id' => 3]) }}" class="btn btn-outline-success btn-lg rounded-5">Shop
+                    Now</a>
             </div>
             <div class="text-center">
                 <img src="img/Apple-iPad-Pro-hero-240507_big.jpg.large.jpg" alt="#"

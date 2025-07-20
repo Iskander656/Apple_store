@@ -12,5 +12,6 @@ class HomeController extends Controller
     {
         $products = Product::all();
         $categories = Category::all();
-        return view('home/index', ['products' => $products, 'categories' => $categories]);    }
+        return view('home.index', ['products' => $products, 'categories' => $categories]);
+    }
 }
