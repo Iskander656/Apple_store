@@ -22,7 +22,6 @@
                                         <li>{{ $line }}</li>
                                     @endforeach
                                 </ul>
-                                <p class="text-muted mb-1"><s>${{ $product->old_price }}</s></p>
                                 <p class="text-danger fw-bold">${{ $product->price }}</p>
                                 <a href="{{ route('order.form', $product->id) }}" class="btn btn-outline-primary">Order</a>
 
@@ -36,4 +35,5 @@
 
     @include('layouts.stats')
     @include('layouts.testimonials')
+    @include('layouts.footer')
 @endsection

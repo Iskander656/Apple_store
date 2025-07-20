@@ -191,7 +191,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Redesigned with better fit, adaptive audio, and Find My case support.',
                 'price' => 199.00,
                 'stock' => 50,
-                'category' => 'Accessories',
+                'category' => 'AirPods',
                 'image' =>'img/airpods-4.jpeg',
             ],
             [
