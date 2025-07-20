@@ -3,6 +3,9 @@
 @section('content')
     @include('layouts.hero')
     @include('layouts.intro')
+    @include('layouts.mac')
+    @include('layouts.ipad')
+    @include('layouts.watch')
 
     <section class="py-5">
         <div class="container-xl">
