@@ -26,7 +26,7 @@
                                     @endforeach
                                 </ul>
                                 <p class="text-danger fw-bold">${{ $product->price }}</p>
-                                <a href="{{ route('order.form', $product->id) }}" class="btn btn-outline-primary">Order</a>
+                                <a href="{{ route('order.form', $product->id) }}" class="btn btn-outline-primary"><i class="bi-cart text-success"></i>Order</a>
 
                             </div>
                         </div>
