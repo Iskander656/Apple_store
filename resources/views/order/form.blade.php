@@ -10,6 +10,12 @@
                 </div>
             @endif
 
+            @if (session('error'))
+                <div class="alet alert-danger text-center rounded-3">
+                    {{ session('error') }}
+                </div>
+            @endif
+
             <div class="text-center mb-4">
                 <i class="bi-apple display-5"></i>
                 <h3 class="mt-2 fw-semibold">Order Product #{{ $productId }}</h3>

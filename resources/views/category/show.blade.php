@@ -11,6 +11,28 @@
             @if ($products->isEmpty())
                 <p class="text-center">Empty.</p>
             @else
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul class="mb-0">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                @if (session('error'))
+                    <div class="alert alert-warning">
+                        {{ session('error') }}
+                    </div>
+                @endif
+
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     @foreach ($products as $product)
                         <div class="col">

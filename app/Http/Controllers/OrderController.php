@@ -18,16 +18,24 @@ class OrderController extends Controller
         return view('order.form', compact('productId', 'locations', 'categories'));
     }
 
-
     public function store(Request $request)
     {
-
         $validated = $request->validate([
             'name' => 'required|string|max:15',
             'phone' => 'required|string|max:8',
             'location_id' => 'required|exists:locations,id',
             'product_id' => 'required|exists:products,id',
         ]);
+
+        $existingOrder = Order::where('customer_name', $validated['name'])
+            ->where('phone', $validated['phone'])
+            ->where('product_id', $validated['product_id'])
+            ->where('status', 'Processing')
+            ->first();
+
+        if ($existingOrder) {
+            return redirect()->back()->with('error', '⚠️ You have already placed this order.');
+        }
 
         Order::create([
             'customer_name' => $validated['name'],

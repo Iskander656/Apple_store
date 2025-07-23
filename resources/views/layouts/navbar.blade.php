@@ -16,7 +16,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link "href="{{ route('status.status.form') }}">Order Status</a>
+                    <a class="nav-link "href="{{ route('status.form') }}">Order Status</a>
                 </li>
 
                 <li class="nav-item dropdown">

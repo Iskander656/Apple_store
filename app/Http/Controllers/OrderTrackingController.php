@@ -18,12 +18,14 @@ class OrderTrackingController extends Controller
     {
         $request->validate([
             'customer_name' => 'required|string|max:255',
+            'phone' => 'required|string|max:20',
         ]);
 
         $categories = Category::all();
 
         $order = Order::with(['product', 'location'])
             ->where('customer_name', $request->customer_name)
+            ->where('phone', $request->phone)
             ->latest()
             ->first();
 

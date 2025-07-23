@@ -11,14 +11,23 @@
                         <div class="alert alert-danger">{{ session('error') }}</div>
                     @endif
 
-                    <form action="{{ route('status.status.check') }}" method="POST">
+                    <form action="{{ route('status.check') }}" method="POST">
                         @csrf
+
                         <div class="mb-3 pt-2">
                             <label for="customer_name" class="form-label fw-semibold">
                                 Your Full Name <span class="text-danger">*</span>
                             </label>
                             <input type="text" name="customer_name" id="customer_name" class="form-control rounded-3"
                                 placeholder="Enter Your Name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label fw-semibold">
+                                Phone Number <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" name="phone" id="phone" class="form-control rounded-3"
+                                placeholder="Enter Your Phone Number" required>
                         </div>
 
                         <div class="text-center mt-4">
